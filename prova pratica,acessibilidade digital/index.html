@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+
+    <title>My page title</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <img src = "light.png" width="150" height="150" class="posi" onclick="DarkMode()"/>
+   <h3 id="DarkModetext "> o modo escuro esta desativado</h3>
+   <botão onclick="DarkMode()" > modo escuro</botão>
+   <botão onclick="ligtmode()" >modo claro </botão>
+    <script>
+        function DarkMode() { 
+        let minhaImagem = document.querySelector('img ');
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        let meuSrc = minhaImagem.getAttribute('src');
+        if (meuSrc === 'https://cdn-icons-png.flaticon.com/512/867/867904.png') {
+            minhaImagem.setAttribute ('src', 'https://cdn-icons-png.flaticon.com/512/867/867802.png');
+        } else{
+            minhaImagem.setAttribute ('src', 'https://cdn-icons-png.flaticon.com/512/867/867904.png');
+        }
+
+    }
+        
+     </script>
+
+    
+    
+
+    <header>
+      <h1>Acessibilidade Digital</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="inicio.html">inicio</a></li>
+        <li><a href="informação.html">informação</a></li>
+        <li><a href="videos e fotos sobre.html">videos</a></li>
+      </ul>
+
+
+    </nav>
+    <aside>
+        <h2></h2>
+
+
+        </ul>
+
+      </aside>
+      <aside class="sidebar"></aside>
+
+    <main>
+
+
+      <article>
+        <h2></h2>
+
+        <p></p>
+
+        <h3></h3>
+
+        <p></p>
+
+        <p></p>
+
+        <h3></h3>
+
+        <p></p>
+
+        <p></p>
+      </article>
+
+      <aside>
+
+
+      </aside>
+    </main>
+
+    <footer>
+      <p></p>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  </body>
+</html>

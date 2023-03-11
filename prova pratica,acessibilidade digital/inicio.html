@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="py-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<header>
+    <body>
+      
+    </body>
+    <h1>Acessibilidade Digital</h1>
+</header>
+
+
+
+
+<nav>
+    <ul>
+        <li><a href="inicio.html">inicio</a></li>
+        <li><a href="informação.html">informação</a></li>
+        <li><a href="videos e fotos sobre.html">videos</a></li>
+    </ul>
+
+
+</nav>
+<aside>
+    <h1>Pergutas e Respostas
+        <hr>
+    </h1>
+
+    <body>
+        <ol>
+            <li>Para que serve acessibilidade na internet?
+                <p>Acessibilidade Digital é a eliminação de barreiras na Web. O conceito pressupõe que os sites e
+                    portais sejam projetados de modo que todas as pessoas possam perceber, entender, navegar e interagir
+                    e maneira efetiva com as páginas.</p>
+            </li>
+            <br>
+
+            <li>Acessibilidade na web é para cegos?
+                <p>A acessibilidade web é a flexibilização do acesso à informação e da interação dos usuários
+                    deficientes visuais no que se refere aos mecanismos de navegação e de apresentação dos sites, à
+                    operação com software e com hardware e às adaptações aos ambientes e situações (GUIA, 1999, p. 60).
+                </p>
+            </li>
+
+            <li>Qual Lei fala sobre acessibilidade?
+                <p>LEI Nº 10.098, DE 19 DE DEZEMBRO DE 2000 - Estabelece normas gerais e critérios básicos para a
+                    promoção da acessibilidade das pessoas portadoras de deficiência ou com mobilidade reduzida, e dá
+                    outras providências.</p>
+           
+        </ol>
+
+        <br>
+        <hr>
+        <ul>
+            <li>Conheça 7 tipos de acessibilidade para tornar nossa sociedade mais inclusiva</li>
+            <br>
+            <li> Acessibilidade atitudinal.</li>
+            <li> Acessibilidade arquitetônica</li>
+            <li> Acessibilidade metodológica</li>
+            <li> Acessibilidade instrumental</li>
+            <li> Acessibilidade programática</li>
+            <li> Acessibilidade nas comunicações</li>
+            <li> Acessibilidade natural.</li>
+
+        </ul>
+
+</aside>
+<aside class="sidebar"></aside>
+
+<main>
+
+
+    <article>
+      
+        <h3 id="DarkMode"></h3>
+        <button onclick="darkModetext"></button>
+        <button lightmode="darkModetext"></button>
+        <style>
+            body{
+                padding: 25px;
+                background-color: white;
+                color:black;
+                font-size:25px;
+            }
+            .dark-mode{
+                background-color: black;
+                color:black
+            }
+            img{
+                width: 100;
+            }
+            .light-mode{
+                background-color:white ;
+                color:black
+            }
+        </style>
+        <img src = "https://cdn-icons-png.flaticon.com/512/867/867904.png" width="150" height="150" class="posi" onclick="DarkMode()"/>
+        <h3 id="DarkModetext "></h3>
+        <botão onclick="DarkMode()" > modo escuro</botão>
+        <botão onclick="ligtmode()" >modo claro </botão>
+        <img src="" onclick="darkMode()"/>
+        <script>
+            function DarkMode() { 
+            let minhaImagem = document.querySelector('img ');
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            let meuSrc = minhaImagem.getAttribute('src');
+            if (meuSrc === 'https://cdn-icons-png.flaticon.com/512/867/867904.png') {
+                minhaImagem.setAttribute ('src', 'https://cdn-icons-png.flaticon.com/512/867/867802.png');
+            } else{
+                minhaImagem.setAttribute ('src', 'https://cdn-icons-png.flaticon.com/512/867/867904.png');
+            }
+    
+        }
+            
+         </script>
+
+    </article>
+
+    <aside>
+
+
+    </aside>
+</main>
+
+<footer>
+    <h2>Faça sempre o seu melhor! ...</h2>
+</footer>
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+</body>
+
+</html>

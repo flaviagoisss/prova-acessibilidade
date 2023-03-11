@@ -1,0 +1,152 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 10px;
+    background-color: #cc951d;
+  }
+
+  body {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  /* || typography */
+
+  h1, h2, h3 {
+    font-family: 'Sonsie One', cursive;
+    color: #2a2a2a;
+  }
+
+  p, input, li {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #2a2a2a;
+  }
+
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+  }
+
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  p, li {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  /* || header layout */
+
+  nav, article, footer, h1 {
+    background-color: rgb(235, 217, 160);
+    font-family: 'Sonsie One', cursive;
+    color: #2a2a2a;
+    padding: 1%;
+  }
+  aside {
+    background-color: rgb(235, 217, 160);
+    font-family: 'verdana', cursive;
+    color: #2a2a2a;
+    padding: 1%;
+  }
+
+  nav {
+    height: 50px;
+    background-color: #050204;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+  }
+
+  nav li {
+    display: inline;
+    text-align: center;
+    flex: 1;
+  }
+
+  nav a {
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(231, 222, 222);
+  }
+
+  input {
+    font-size: 1.6rem;
+    height: 32px;
+  }
+
+  input[type="search"] {
+    flex: 3;
+  }
+
+  main {
+    display: flex;
+  }
+
+  article {
+    flex: 4;
+  }
+
+
+  footer {
+    margin-top: 10px;
+  }
+  .sidebar {
+	background-color: #1d0e0e;
+	height: 500%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 200px;
+	color: #fff;
+  padding: 1px
+}
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.sidebar li {
+	padding: 5px;
+}
+.sidebar li:hover {
+	background-color: #000000;
+}
+.sidebar a {
+	color: #fcf5f5;
+	text-decoration: none;
+}
+
+.dark-mode {
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    
+    
+    }
+    
+    .posi {
+    
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    }
